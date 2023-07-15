@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Altruistech</title>
     <link rel="stylesheet" href="static/styles.css">
     <link href="https://api.fontshare.com/embed/clash-grotesk.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
@@ -11,17 +11,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+
 </head>
 <body class="bg-light">
+  <style>
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'ClashDisplay-Semibold', sans-serif;
+      padding: 10px;
+      width: 100%;
+      max-width: 200px;
+    }
 
-
+    .required {
+      color: red;
+      margin-left: 5px;
+  
+    }
+  </style>
+  
 <!-- heading -->
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid d-flex justify-content-center align-items-center">
-    <span class="navbar-brand mb-0 h1 text-center header-text">Introducing <span class="text-primary header-text">Altruistech:</span> <span class="thin-text">Please help us with this survey.</span></span>
+    <span class="navbar-brand mb-0 h1 text-center header-text">Introducing <span class="text-primary header-text">Altruistech:</span> 
+    <!-- <span class="thin-text">Please help us with this survey.</span></span> -->
     <a class="btn border-light text-white" data-bs-toggle="modal" data-bs-target="#survey" href="#" style="font-family: 'ClashDisplay-Light';">Take Survey</a>
   </div>
 </nav>
+
+
 
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
@@ -77,51 +103,71 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
 </div>
 
 
+
+
 <!-- Gallery -->
-<div class="row">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+<div class="row mt-3">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="width: 20%;">
+    <img
+      src="images/image1.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Find Jobs"
+    />
+
+    <div style="position: relative;">
       <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        src="images/frame.png"
         class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
+        alt="Text Background"
       />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Wintry Mountain Landscape"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Mountains in the Clouds"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Waves at Sea"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Yosemite National Park"
-      />
+      <div class="text-overlay">Find Jobs</div>
     </div>
   </div>
-  <!-- Gallery -->
+
+  <div class="col-lg-4 mb-4 mb-lg-0 order-md-2" style="width: 20%;">
+    <div style="position: relative;">
+      <img
+        src="images/frame.png"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Text Background"
+      />
+      <div class="text-overlay">Find Talent</div>
+    </div>
+
+    <img
+      src="images/image12.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Find Talent"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0" style="width: 40%;">
+    <img
+      src="images/doctor-patient.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Middle"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0" style="width: 20%;">
+    <img
+      src="images/Frame 13.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Community Health workers"
+    />
+
+    <div style="position: relative;">
+      <img
+        src="images/frame.png"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Text Background"
+      />
+      <div class="text-overlay">Get Consultation</div>
+    </div>
+  </div>
+</div>
+
+
 
   
 
@@ -273,9 +319,6 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
     </div>
   </section>
   
-  
-  
-
 <!-- Features -->
 <section id="features" class="my-3 mx-0 p-3">
     <div class="container-fluid">
@@ -412,7 +455,7 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
         </div>
         <div class="col-lg-6">
           <div class="d-flex align-items-center justify-content-center">
-            <img src="images/image4.png" class="img-fluid rounded" alt="Townhouses and Skyscrapers" />
+            <img src="images/image4.png" class="img-fluid rounded" alt="" />
           </div>
         </div>
       </div>
@@ -420,7 +463,7 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
   </section>
   
 
-<section id="#survey" class="bg-primary vh-100 d-flex mt-3 mb-6 mx-0 p-3">
+<!-- <section id="#survey" class="bg-primary vh-100 d-flex mt-3 mb-6 mx-0 p-3">
 <div class="container-fluid">
 <div class="row">
 <div class="col">
@@ -434,31 +477,71 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
 </div>
 </div>
 
-<div class="col bg-white rounded v-100 mb-3">
+<div class="col bg-white rounded v-100 mb-3 row-cols-auto">
     <form class="m-3">
         <div class="mb-3">
-            <label for="name" class="form-label h5" style="font-family: 'ClashDisplay-Medium';">Full Name</label>
+            <label for="name" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Full Name<span class="required">*</span></label>
             <input type="text" class="form-control p-2" id="survey-name" aria-describedby="nameHelp">
           </div>
         <div class="mb-3">
-          <label for="surveyEmail" class="form-label h5" style="font-family: 'ClashDisplay-Semibold';">Email address</label>
+          <label for="surveyEmail" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Email address<span class="required">*</span></label>
           <input type="email" class="form-control p-2" id="survey-email" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="survey" class="form-label" style="font-family: 'ClashDisplay-Semibold';">What is your feedback to our solution?</label>
+          <label for="survey" class="form-label" style="font-family: 'ClashDisplay-Semibold';">What is your feedback to our solution?<span class="required">*</span></label>
           <textarea class="form-control p-5" id="survey-message" rows="3"></textarea>
         </div>
        
-        <button type="submit" id="survey-submit" class="btn w-50 btn-lg btn-primary py-3" style="font-family: 'ClashDisplay-Light';">Submit</button>
+        <button type="submit" id="survey-submit" class="btn w-100 btn-lg btn-primary py-3" style="font-family: 'ClashDisplay-Medium';">Submit Survey</button>
     </form>
 </div>
 </div>
 </div>
+</section> -->
+
+<section id="survey" class="bg-primary d-flex mt-3 mb-6 mx-0 p-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 sur-text">
+        <div class="text-center">
+          <h2 class="text-white h1" style="font-family: 'ClashDisplay-Semibold';">
+            We Value Your Feedback: Take our Survey and Shape the Future of our Healthcare Solutions.
+          </h2>
+          <p class="text-white">
+            This survey aims to gather your feedback on various aspects of the app, including its usability, features, and overall effectiveness in connecting health professionals, hospitals, patients, and community health workers. Your honest opinions will help us identify areas for improvement, highlight what we're doing right, and guide our future developments.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 bg-white rounded v-100 mb-3 sur-form">
+        <form class="m-3">
+          <div class="mb-3">
+            <label for="name" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Full Name<span class="required">*</span></label>
+            <input type="text" class="form-control p-2" id="survey-name" aria-describedby="nameHelp">
+          </div>
+          <div class="mb-3">
+            <label for="surveyEmail" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Email address<span class="required">*</span></label>
+            <input type="email" class="form-control p-2" id="survey-email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="survey" class="form-label" style="font-family: 'ClashDisplay-Semibold';">What is your feedback to our solution?<span class="required">*</span></label>
+            <textarea class="form-control p-5" id="survey-message" rows="3"></textarea>
+          </div>
+          <button type="submit" id="survey-submit" class="btn btn-primary btn-lg w-100 btn-block" style="font-family: 'ClashDisplay-Medium';">Submit Survey</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
+
+
+
+
+
 <section id="testimonials" class="mt-3">
 
 <div class="container mb-2">
-<h3 class="text-primary">Testimonials </h3>
+<p class="text-primary h5">Testimonials </p>
 <h2 style="font-family: 'ClashDisplay-Semibold';">
 See what people are saying about our solution.
 </h2>
@@ -472,29 +555,29 @@ See what people are saying about our solution.
       <div class="carousel-item active">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 d-none d-lg-block ">
-                <div class="testimonial-item bg-gray rounded shadow p-3 py-5 " style="background-color: rgb(221, 242, 240); height: max-content;">
-                  <div class="d-flex justify-content-start v-10 bg-gray" >
-                      <div class="flex-item">
-                          <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/smiley-doctor-with-coat.jpg" alt="avatar" style="width: 75px;height:75px;">
-                      </div>
-                  <div class="text-center flex-item">
-                    <h5 class="my-0 h5">Ivy Getanda</h5>
-                    <p>Respiratory Therapist</p>
-                  </div>
-                  </div>
-                  
-                  <p class="font-weight-bold text-dark">
-                    Highly recommendable solution for health professionals looking for rewarding opportunities.  <span class="text-primary">
-                        The solution provides various job openings tailored to your expertise and career goals. 
-                      </span> 
-                      It's a valuable resource for anyone seeking to advance their career in the healthcare industry.
-
-                  </p>
+            <div class="col-lg-4 d-lg-block mb-3">
+              <div class="testimonial-item bg-light rounded shadow p-3 pb-5" style=" height: 100%;">
+                <div class="d-flex justify-content-start v-10 " >
+                    <div class="flex-item">
+                        <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-female-soldier-jobs-career-portrait.jpg" alt="avatar" style="width: 75px; height:75px;">
+                    </div>
+                <div class="mx-0 flex-item">
+                  <h5 class="mb-0 h5">Ivy Getanda</h5>
+                  <p>Respiratory Therapist</p>
                 </div>
+                </div>
+                
+                <p class="font-weight-bold text-dark">
+                  Highly recommendable solution for health professionals looking for rewarding opportunities.  <span class="text-primary">
+                      The solution provides various job openings tailored to your expertise and career goals. 
+                    </span> 
+                    It's a valuable resource for anyone seeking to advance their career in the healthcare industry.
+              
+                </p>
               </div>
-              <div class="col-lg-4 d-none d-lg-block">
-                <div class="testimonial-item bg-gray rounded shadow p-3" style="background-color: rgb(221, 242, 240); height: max-content;">
+            </div>
+              <div class="col-lg-4 d-lg-block mb-3 bg">
+                <div class="testimonial-item bg-gray rounded shadow p-3" style=" height: max-content;">
                   <div class="d-flex justify-content-start v-10 bg-gray" >
                       <div class="flex-item">
                           <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/front-view-smiley-man-wearing-lab-coat.jpg" alt="avatar" style="width: 75px; height:75px;">
@@ -513,8 +596,8 @@ See what people are saying about our solution.
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 d-none d-lg-block">
-                <div class="testimonial-item bg-gray rounded shadow p-3" style="background-color: rgb(221, 242, 240); height: max-content;">
+              <div class="col-lg-4 d-lg-block">
+                <div class="testimonial-item bg-gray rounded shadow p-3" style="height: 100%;">
                   <div class="d-flex v-10 bg-gray" >
                       <div class="flex-item">
                           <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-teenage-girl-portrait-happy-smiling-face.jpg" alt="avatar" style="width: 100px;">
@@ -542,29 +625,29 @@ See what people are saying about our solution.
            <div class="carousel-item active">
             <div class="container">
               <div class="row">
-                <div class="col-lg-4 d-none d-lg-block ">
-                    <div class="testimonial-item bg-gray rounded shadow p-3 py-5 " style="background-color: rgb(221, 242, 240); height: max-content;">
-                      <div class="d-flex justify-content-start v-10 bg-gray" >
-                          <div class="flex-item">
-                              <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/smiley-doctor-with-coat.jpg" alt="avatar" style="width: 75px;height:75px;">
-                          </div>
-                      <div class="text-center flex-item">
-                        <h5 class="my-0 h5">Ivy Getanda</h5>
-                        <p>Respiratory Therapist</p>
-                      </div>
-                      </div>
-                      
-                      <p class="font-weight-bold text-dark">
-                        Highly recommendable solution for health professionals looking for rewarding opportunities.  <span class="text-primary">
-                            The solution provides various job openings tailored to your expertise and career goals. 
-                          </span> 
-                          It's a valuable resource for anyone seeking to advance their career in the healthcare industry.
-    
-                      </p>
+                <div class="col-lg-4 d-lg-block mb-3">
+                  <div class="testimonial-item bg-light rounded shadow p-3 pb-5" style=" height: 100%;">
+                    <div class="d-flex justify-content-start v-10 " >
+                        <div class="flex-item">
+                            <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-female-soldier-jobs-career-portrait.jpg" alt="avatar" style="width: 75px; height:75px;">
+                        </div>
+                    <div class="mx-0 flex-item">
+                      <h5 class="mb-0 h5">Ivy Getanda</h5>
+                      <p>Respiratory Therapist</p>
                     </div>
+                    </div>
+                    
+                    <p class="font-weight-bold text-dark">
+                      Highly recommendable solution for health professionals looking for rewarding opportunities.  <span class="text-primary">
+                          The solution provides various job openings tailored to your expertise and career goals. 
+                        </span> 
+                        It's a valuable resource for anyone seeking to advance their career in the healthcare industry.
+                  
+                    </p>
                   </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="testimonial-item bg-gray rounded shadow p-3" style="background-color: rgb(221, 242, 240); height: max-content;">
+                </div>
+                  <div class="col-lg-4 d-lg-block mb-3 bg">
+                    <div class="testimonial-item bg-gray rounded shadow p-3" style=" height: max-content;">
                       <div class="d-flex justify-content-start v-10 bg-gray" >
                           <div class="flex-item">
                               <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/front-view-smiley-man-wearing-lab-coat.jpg" alt="avatar" style="width: 75px; height:75px;">
@@ -583,8 +666,8 @@ See what people are saying about our solution.
                       </p>
                     </div>
                   </div>
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="testimonial-item bg-gray rounded shadow p-3" style="background-color: rgb(221, 242, 240); height: max-content;">
+                  <div class="col-lg-4 d-lg-block">
+                    <div class="testimonial-item bg-gray rounded shadow p-3" style="height: 100%;">
                       <div class="d-flex v-10 bg-gray" >
                           <div class="flex-item">
                               <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-teenage-girl-portrait-happy-smiling-face.jpg" alt="avatar" style="width: 100px;">
@@ -613,7 +696,7 @@ See what people are saying about our solution.
     <!-- Controls -->
     <div class="d-flex justify-content-center mb-4">
       <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon text-primary " aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
@@ -629,7 +712,7 @@ See what people are saying about our solution.
 <section id="faqs" class="bg-primary v-100 d-flex my-3 mx-0 p-3">
   <div class="container-fluid">
     <div class="row">
-      <div class="col">
+      <div class="col-lg-6">
         <div class="row text-align-center">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -707,7 +790,7 @@ See what people are saying about our solution.
           </div>
         </div>
       </div>
-      <div class="col text-white rounded v-100">
+      <div class="col-lg-6 text-white rounded v-100">
         <div>
           <h4>Frequently Asked Questions</h4>
           <h1>We have compiled a list of frequently asked questions to provide you with quick answers and helpful answers.</h1>
@@ -731,37 +814,43 @@ See what people are saying about our solution.
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="enrollLabel">Sign Up</h5>
+<!-- <h5 class="modal-title" id="enrollLabel">Sign Up</h5> -->
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
-<p class="lead">
-Fill this form and we will get back to you
+<p class="lead text-primary" style="font-family: 'ClashDisplay-Semibold';">
+Join Altruistech today.
 </p>
 <form>
-    <!-- Name input -->
-    <div class="form-outline mb-4">
-      <input type="text" id="waitlist-name" class="form-control" required />
-      <label class="form-label" for="waitlist-name">Name</label>
-    </div>
-  
-    <!-- Email input -->
-    <div class="form-outline mb-4">
-      <input type="email" id="waitlist-email" class="form-control"  required/>
-      <label class="form-label" for="waitlist-email">Email address</label>
-    </div>
-  
-    <!-- Message input -->
-    <div class="form-outline mb-4">
-      <textarea class="form-control" id="waitlist-message" rows="4" required></textarea>
-      <label class="form-label" for="waitlist-message">Message</label>
-    </div>
-  
-    
-  
-    <!-- Submit button -->
-    <button type="submit" id="waitlist-submit"  class="btn btn-primary btn-block mb-4">Send</button>
-  </form>
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="waitlist-name" style="font-family: 'ClashDisplay-Semibold';">Name<span class="required">*</span></label>
+    <input type="text" id="waitlist-name" class="form-control" required />
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="waitlist-email" style="font-family: 'ClashDisplay-Semibold';">Email address<span class="required">*</span></label>
+    <input type="email" id="waitlist-email" class="form-control" required />
+  </div>
+
+
+  <!-- Role dropdown -->
+  <div class="form-outline mb-4">
+    <label class="form-label" for="waitlist-role" style="font-family: 'ClashDisplay-Semibold';">Role<span class="required">*</span></label>
+    <select id="waitlist-role" class="form-select" required>
+      <option value="" disabled selected style="font-family: 'ClashDisplay-Medium', sans-serif;">Select your role</option>
+      <option value="health-professional" style="font-family: 'ClashDisplay-Medium', sans-serif;">Health Professional</option>
+      <option value="health-center" style="font-family: 'ClashDisplay-Medium', sans-serif;">Health Center</option>
+      <option value="patient" style="font-family: 'ClashDisplay-Medium', sans-serif;">Patient</option>
+      <option value="community-health-worker" style="font-family: 'ClashDisplay-Medium', sans-serif;">Community Health Worker</option>
+    </select>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" id="waitlist-submit" class="btn btn-primary btn-block mb-4" style="font-family: 'ClashDisplay-Semibold';">Sign Up</button>
+</form>
+
 </div>
 <div class="modal-footer">
 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -778,40 +867,32 @@ Fill this form and we will get back to you
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="enrollLabel">Take Survey</h5>
+<!-- <h5 class="modal-title text-primary" id="enrollLabel" style="font-family: 'ClashDisplay-Light';">Survey</h5> -->
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
-<p class="lead">
-Fill this form and we will get back to you
+<p class="lead text-primary" style="font-family: 'ClashDisplay-Semibold', sans-serif;">
+Thank you for taking the time to take our survey. We appreciate your feedback.
 </p>
-<form>
-    <!-- Name input -->
-    <div class="form-outline mb-4">
-      <input type="text" id="survey-name" class="form-control" />
-      <label class="form-label" for="survey-name">Name</label>
+<form class="m-3">
+  <div class="mb-3">
+      <label for="name" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Full Name<span class="required">*</span></label>
+      <input type="text" class="form-control p-2" id="survey-name" aria-describedby="nameHelp">
     </div>
-  
-    <!-- Email input -->
-    <div class="form-outline mb-4">
-      <input type="email" id="survey-email" class="form-control" />
-      <label class="form-label" for="survey-email">Email address</label>
-    </div>
-  
-    <!-- Message input -->
-    <div class="form-outline mb-4">
-      <textarea class="form-control" id="survey-message" rows="4"></textarea>
-      <label class="form-label" for="survey-message">Message</label>
-    </div>
-  
-   
-  
-    <!-- Submit button -->
-    <button type="submit" id="survey-submit" class="btn btn-primary btn-block mb-4">Send</button>
-  </form>
+  <div class="mb-3">
+    <label for="surveyEmail" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Email address<span class="required">*</span></label>
+    <input type="email" class="form-control p-2" id="survey-email" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="survey" class="form-label" style="font-family: 'ClashDisplay-Semibold';">What is your feedback to our solution?<span class="required">*</span></label>
+    <textarea class="form-control p-5" id="survey-message" rows="3"></textarea>
+  </div>
+ 
+  <button type="submit" id="survey-submit" class="btn w-100 btn-lg btn-primary py-3" style="font-family: 'ClashDisplay-Medium';">Submit Survey</button>
+</form>
 </div>
 <div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'ClashDisplay-Light';">Close</button>
 </div>
 
 </div>
@@ -827,7 +908,7 @@ Fill this form and we will get back to you
 <div class="modal-content">
 <div class="modal-header">
 <h5 class="modal-title" id="enrollLabel">Ask your Question</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <div class="modal-body">
 <p class="lead">
@@ -836,25 +917,25 @@ Fill this form and we will get back to you
 <form id="contact-form">
     <!-- Name input -->
     <div class="form-outline mb-4" id="contact-form">
+      <label class="form-label" for="contact-name" style="font-family: 'ClashDisplay-Medium', sans-serif;">Name<span class="required">*</span></label>
       <input type="text" id="contact-name" class="form-control" />
-      <label class="form-label" for="contact-name">Name</label>
     </div>
   
     <!-- Email input -->
     <div class="form-outline mb-4">
+      <label class="form-label" for="contact-email" style="font-family: 'ClashDisplay-Medium', sans-serif;">Email address<span class="required">*</span></label>
       <input type="email" id="contact-email" class="form-control" />
-      <label class="form-label" for="contact-email">Email address</label>
     </div>
   
     <!-- Message input -->
     <div class="form-outline mb-4">
+      <label class="form-label" for="contact-message" style="font-family: 'ClashDisplay-Medium', sans-serif;">Question<span class="required">*</span></label>
       <textarea class="form-control" id="contact-message" rows="4"></textarea>
-      <label class="form-label" for="contact-message">Message</label>
     </div>
 
   
     <!-- Submit button -->
-    <button id="contact-submit" type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+    <button id="contact-submit" type="submit" class="btn btn-primary btn-block mb-4" style="font-family: 'ClashDisplay-Medium';">Contact Us</button>
   </form>
 </div>
 <div class="modal-footer">

@@ -56,13 +56,13 @@ surveyButton.addEventListener("click", function() {
 const signUpButton = document.getElementById("waitlist-submit")
 const signUpName = document.getElementById("waitlist-name")
 const signUpEmail = document.getElementById("waitlist-email")
-const signUpMessage = document.getElementById("waitlist-message")
+const signUpMessage = document.getElementById("waitlist-role")
 
 signUpButton.addEventListener("click", function() {
     let inputValue = {
         name: signUpName.value, 
         email: signUpEmail.value, 
-        message: signUpMessage.value, 
+        profile: signUpMessage.value, 
     }
     
     push(signUpForm, inputValue)
