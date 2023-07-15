@@ -1,0 +1,59 @@
+@import url('clash-display.css');
+
+
+p, a {
+    font-family: 'ClashDisplay-Extralight', sans-serif;
+}
+
+
+.header-text, .h3, .h2, h1 {
+    font-family: 'ClashDisplay-Semibold', sans-serif;
+
+}
+
+.thin-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 100;
+}
+
+.nav-link, #branding {
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+#branding {
+    color:dimgray
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.big-flex {
+    flex: 2;
+}
+
+.h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: lighter;
+}
+
+p, .accordion-body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+}
+
+
+form {
+    font-family: 'ClashDisplay-Normal', sans-serif;
+    font-weight: normal;
+}
+
+.testimonial-img {
+    width: 10%;
+}
+
+.h5 {
+    font-family: 'ClashDisplay-Semibold', sans-serif;
+
+}
