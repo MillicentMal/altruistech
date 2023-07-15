@@ -1,49 +1,71 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCD02OIGVV74Z34S5ox2E09Y3_O1mNgpY4",
-  authDomain: "altruistech-eec9c.firebaseapp.com",
-  projectId: "altruistech-eec9c",
-  storageBucket: "altruistech-eec9c.appspot.com",
-  messagingSenderId: "154397714092",
-  appId: "1:154397714092:web:6efc8545c40fcaaf57a109"
-};
+const appSettings = {
+    databaseURL: "https://altruistech-eec9c-default-rtdb.firebaseio.com/"
+}
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(appSettings)
+const database = getDatabase(app)
+const users = ref(database, "users")
+const contactForm = ref(database, "contactForm")
+const surveyForm = ref(database, "surveyForm")
+const signUpForm = ref(database, "signUpForm")
 
 
-// Forms
 
-  // Capture contact form submission event
-  var contactForm = document.getElementById('contact-form');
-  contactForm.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+// Contact Form Data
+const addButtonEl = document.getElementById("contact-submit")
+const name = document.getElementById("contact-name")
+const email = document.getElementById("contact-email")
+const message = document.getElementById("contact-message")
 
-    // Get the form input values
-    var name = contactForm.elements['name'].value;
-    var email = contactForm.elements['email'].value;
-    var message = contactForm.elements['message'].value;
+addButtonEl.addEventListener("click", function() {
+    let inputValue = {
+        name: name.value, 
+        email: email.value, 
+        message: message.value, 
+    }
+    
+    push(contactForm, inputValue)
+    form.reset();
+    console.log(`${inputValue} added to database`)
+})
 
-    // Save the form data to Firestore
-    db.collection('contactforms').add({
-      name: name,
-      email: email,
-      message: message
-    })
-      .then(function (docRef) {
-        console.log('Contact message saved with ID: ', docRef.id);
-        // Optionally, display a success message or redirect to a thank you page
-      })
-      .catch(function (error) {
-        console.error('Error adding contact message: ', error);
-        // Optionally, display an error message to the user
-      });
 
-    // Reset the form
-    contactForm.reset();
-  });
+// Survey Form Data
+const surveyButton = document.getElementById("survey-submit")
+const surveyName = document.getElementById("survey-name")
+const surveyEmail = document.getElementById("survey-email")
+const surveyMessage = document.getElementById("survey-message")
+
+surveyButton.addEventListener("click", function() {
+    let inputValue = {
+        name: surveyName.value, 
+        email: surveyEmail.value, 
+        message: surveyMessage.value, 
+    }
+    
+    push(surveyForm, inputValue)
+    form.reset();
+    console.log(`${inputValue} added to database`)
+})
+
+
+// SignUp Form Data
+const signUpButton = document.getElementById("waitlist-submit")
+const signUpName = document.getElementById("waitlist-name")
+const signUpEmail = document.getElementById("waitlist-email")
+const signUpMessage = document.getElementById("waitlist-message")
+
+signUpButton.addEventListener("click", function() {
+    let inputValue = {
+        name: signUpName.value, 
+        email: signUpEmail.value, 
+        message: signUpMessage.value, 
+    }
+    
+    push(signUpForm, inputValue)
+    form.reset();
+    console.log(`${inputValue} added to database`)
+})

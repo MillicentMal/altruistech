@@ -78,49 +78,50 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
 
 
 <!-- Gallery -->
-
-    <!-- <div class="row container mx-0 mt-5 " id="features">
-  <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-    <div class="position-relative">
-      <img src="images/group-african-medical-students-posed-outdoor-against-university-door.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-      <img src="images/frame.png" class="w-100 bg-image shadow-1-strong rounded mb-4" alt="Text frame" />
-      <div class="overlay-text text-light d-flex justify-content-center flex-column text-center">
-        <h1>Find Jobs</h1>
-      </div>
+<div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
     </div>
   </div>
-  <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-    <div class="position-relative">
-      <img src="images/frame.png" class="w-100 bg-image shadow-1-strong rounded mb-4" alt="Text frame" />
-              <img src="images/afro-doctors-consulting-young-adult-hospital-ward.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-
-      <div class="overlay-text-2 text-light d-flex justify-content-center flex-column text-center" >
-        <h1>Find Talents</h1>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-12 mb-4 mb-lg-0" style="overflow-y: hidden;">
-    <div
-    class="bg-image rounded shadow-1-strong mb-4"
-    style="
-      background-image: url('images/image2.png');
-      height: 75%;
-        background-position: center;
-    "
-  ></div>
-  </div>
-  <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-    <div class="position-relative">
-      <img src="images/community-health.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-      <img src="images/frame.png" class="w-100 bg-image  rounded mb-4" alt="Text frame" />
-      <div class="overlay-text-3 text-light d-flex flex-column">
-        <h1>Find Consultation</h1>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<!-- Gallery -->
+  <!-- Gallery -->
 
   
 
@@ -437,18 +438,18 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
     <form class="m-3">
         <div class="mb-3">
             <label for="name" class="form-label h5" style="font-family: 'ClashDisplay-Medium';">Full Name</label>
-            <input type="text" class="form-control p-2" id="name" aria-describedby="nameHelp">
+            <input type="text" class="form-control p-2" id="survey-name" aria-describedby="nameHelp">
           </div>
         <div class="mb-3">
           <label for="surveyEmail" class="form-label h5" style="font-family: 'ClashDisplay-Semibold';">Email address</label>
-          <input type="email" class="form-control p-2" id="surveyEmail" aria-describedby="emailHelp">
+          <input type="email" class="form-control p-2" id="survey-email" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
           <label for="survey" class="form-label" style="font-family: 'ClashDisplay-Semibold';">What is your feedback to our solution?</label>
-          <textarea class="form-control p-5" id="survey" rows="3"></textarea>
+          <textarea class="form-control p-5" id="survey-message" rows="3"></textarea>
         </div>
        
-        <button type="button" class="btn w-50 btn-lg btn-primary py-3" style="font-family: 'ClashDisplay-Light';">Submit</button>
+        <button type="submit" id="survey-submit" class="btn w-50 btn-lg btn-primary py-3" style="font-family: 'ClashDisplay-Light';">Submit</button>
     </form>
 </div>
 </div>
@@ -740,26 +741,26 @@ Fill this form and we will get back to you
 <form>
     <!-- Name input -->
     <div class="form-outline mb-4">
-      <input type="text" id="form4Example1" class="form-control" required />
-      <label class="form-label" for="form4Example1">Name</label>
+      <input type="text" id="waitlist-name" class="form-control" required />
+      <label class="form-label" for="waitlist-name">Name</label>
     </div>
   
     <!-- Email input -->
     <div class="form-outline mb-4">
-      <input type="email" id="form4Example2" class="form-control"  required/>
-      <label class="form-label" for="form4Example2">Email address</label>
+      <input type="email" id="waitlist-email" class="form-control"  required/>
+      <label class="form-label" for="waitlist-email">Email address</label>
     </div>
   
     <!-- Message input -->
     <div class="form-outline mb-4">
-      <textarea class="form-control" id="form4Example3" rows="4" required></textarea>
-      <label class="form-label" for="form4Example3">Message</label>
+      <textarea class="form-control" id="waitlist-message" rows="4" required></textarea>
+      <label class="form-label" for="waitlist-message">Message</label>
     </div>
   
     
   
     <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+    <button type="submit" id="waitlist-submit"  class="btn btn-primary btn-block mb-4">Send</button>
   </form>
 </div>
 <div class="modal-footer">
@@ -787,26 +788,26 @@ Fill this form and we will get back to you
 <form>
     <!-- Name input -->
     <div class="form-outline mb-4">
-      <input type="text" id="form4Example1" class="form-control" />
-      <label class="form-label" for="form4Example1">Name</label>
+      <input type="text" id="survey-name" class="form-control" />
+      <label class="form-label" for="survey-name">Name</label>
     </div>
   
     <!-- Email input -->
     <div class="form-outline mb-4">
-      <input type="email" id="form4Example2" class="form-control" />
-      <label class="form-label" for="form4Example2">Email address</label>
+      <input type="email" id="survey-email" class="form-control" />
+      <label class="form-label" for="survey-email">Email address</label>
     </div>
   
     <!-- Message input -->
     <div class="form-outline mb-4">
-      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-      <label class="form-label" for="form4Example3">Message</label>
+      <textarea class="form-control" id="survey-message" rows="4"></textarea>
+      <label class="form-label" for="survey-message">Message</label>
     </div>
   
    
   
     <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+    <button type="submit" id="survey-submit" class="btn btn-primary btn-block mb-4">Send</button>
   </form>
 </div>
 <div class="modal-footer">
@@ -832,28 +833,28 @@ Fill this form and we will get back to you
 <p class="lead">
 Fill this form and we will get back to you
 </p>
-<form >
+<form id="contact-form">
     <!-- Name input -->
     <div class="form-outline mb-4" id="contact-form">
-      <input type="text" id="form4Example1" class="form-control" />
-      <label class="form-label" for="form4Example1">Name</label>
+      <input type="text" id="contact-name" class="form-control" />
+      <label class="form-label" for="contact-name">Name</label>
     </div>
   
     <!-- Email input -->
     <div class="form-outline mb-4">
-      <input type="email" id="form4Example2" class="form-control" />
-      <label class="form-label" for="form4Example2">Email address</label>
+      <input type="email" id="contact-email" class="form-control" />
+      <label class="form-label" for="contact-email">Email address</label>
     </div>
   
     <!-- Message input -->
     <div class="form-outline mb-4">
-      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-      <label class="form-label" for="form4Example3">Message</label>
+      <textarea class="form-control" id="contact-message" rows="4"></textarea>
+      <label class="form-label" for="contact-message">Message</label>
     </div>
 
   
     <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+    <button id="contact-submit" type="submit" class="btn btn-primary btn-block mb-4">Send</button>
   </form>
 </div>
 <div class="modal-footer">
@@ -936,71 +937,9 @@ Fill this form and we will get back to you
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore-compat.js"></script>
-<script>
 
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCD02OIGVV74Z34S5ox2E09Y3_O1mNgpY4",
-  authDomain: "altruistech-eec9c.firebaseapp.com",
-  projectId: "altruistech-eec9c",
-  storageBucket: "altruistech-eec9c.appspot.com",
-  messagingSenderId: "154397714092",
-  appId: "1:154397714092:web:6efc8545c40fcaaf57a109"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-
-
-
-// Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
-
-
-</script>
-
-
-<script>
-
-
-  // Capture contact form submission event
-  var contactForm = document.getElementById('contact-form');
-  contactForm.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the form from submitting normally
-
-    // Get the form input values
-    var name = contactForm.elements['name'].value;
-    var email = contactForm.elements['email'].value;
-    var message = contactForm.elements['message'].value;
-
-    // Save the form data to Firestore
-    db.collection('contactforms').add({
-      name: name,
-      email: email,
-      message: message
-    })
-      .then(function (docRef) {
-        console.log('Contact message saved with ID: ', docRef.id);
-        // Optionally, display a success message or redirect to a thank you page
-      })
-      .catch(function (error) {
-        console.error('Error adding contact message: ', error);
-        // Optionally, display an error message to the user
-      });
-
-    // Reset the form
-    contactForm.reset();
-  });
-
+<script src="index.js" type="module">
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
