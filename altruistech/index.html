@@ -15,6 +15,8 @@
 
 </head>
 <body class="bg-light">
+
+  
   <style>
     .text-overlay {
       position: absolute;
@@ -39,24 +41,31 @@
   </style>
   
 <!-- heading -->
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid d-flex justify-content-center align-items-center">
-    <span class="navbar-brand mb-0 h1 text-center header-text">Introducing <span class="text-primary header-text">Altruistech:</span> 
-    <!-- <span class="thin-text">Please help us with this survey.</span></span> -->
-    <a class="btn border-light text-white" data-bs-toggle="modal" data-bs-target="#survey" href="#" style="font-family: 'ClashDisplay-Light';">Take Survey</a>
+ 
+<div class="bg-dark">
+<div class="container header-text d-flex bg-dark">
+  <div class="col-text">
+    <span class="text-white">
+      Introducing <span class="text-primary">Altruistech:</span> 
+    </span>
+    <div class="thin-text text-white">
+      Please help us with this survey.
+    </div>
   </div>
-</nav>
-
-
-
+ 
+  <div class="col-button">
+    <a class="btn border-light text-white" href="#survey" style="font-family: 'ClashDisplay-Light';">Start Survey</a>
+  </div>
+</div>
+</div>
 <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
+  <div class="container nav-container">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <span class="h3 logo">
+      <span class="logo">
         Altruistech
       </span>
-      <span class="h1 text-primary">.</span>
+      <span class="h1 logo-period text-primary" style="font-family: 'DM Sans', sans-serif;">.</span>
     </a>
 
     <!-- Navbar Toggler -->
@@ -82,15 +91,15 @@
       </ul>
 
       <!-- Button -->
-      <a class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#waitlist" href="#" style="font-family: 'ClashDisplay-Light';">Sign Up</a>
+      <a class="btn sign-up btn-primary text-center" data-bs-toggle="modal" data-bs-target="#waitlist" href="#" style="font-family: 'ClashDisplay-Light';">Sign Up</a>
     </div>
   </div>
 </nav>
 
 <section id="home" class="mt-5">
-<div class="container flex-column d-flex  align-items-center w-75">
-<div class="h2 ">
-<p class="font-weight-bold h2">
+<div class="container home-container flex-column d-flex  align-items-center w-75">
+<div class="">
+<p class="font-weight-bold home-header">
 Connecting<span class="text-primary"> Healthcare Professionals, Hospitals, Patients,</span> and <span class="text-primary"> Community Health Workers</span> for Enhanced Healthcare Access.
 </p>
 </div>
@@ -98,7 +107,7 @@ Connecting<span class="text-primary"> Healthcare Professionals, Hospitals, Patie
 Join Altruistech today and unlock a world of collaboration, convenience, and improved healthcare outcomes. We bridge the gap between health professionals seeking rewarding opportunities, hospitals aiming to recruit top talent, patients in need of online medical consultations, and community health workers eager to make a positive impact.
 </div>
 <div  class="mt-5 w-100  d-flex justify-content-center">
-<button type="button" class="btn w-50 btn-lg btn-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Light';">Sign Up</button>
+<button type="button" class="btn w-50 sign-up btn-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Light', san-serif;">Sign Up</button>
 </div>
 </div>
 
@@ -106,8 +115,8 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
 
 
 <!-- Gallery -->
-<div class="row mt-3">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style="width: 20%;">
+<div class="row feature-amt-3">
+  <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" style="width: 20%;">
     <img
       src="images/image1.png"
       class="w-100 shadow-1-strong rounded mb-4"
@@ -117,14 +126,14 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
     <div style="position: relative;">
       <img
         src="images/frame.png"
-        class="w-100 shadow-1-strong rounded mb-4"
+        class="w-100 shadow-1-strong  rounded mb-4"
         alt="Text Background"
       />
       <div class="text-overlay">Find Jobs</div>
     </div>
   </div>
 
-  <div class="col-lg-4 mb-4 mb-lg-0 order-md-2" style="width: 20%;">
+  <div class="col-lg-4 mb-4 mb-lg-0" style="width: 20%;">
     <div style="position: relative;">
       <img
         src="images/frame.png"
@@ -233,7 +242,7 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
                   </div>
                 </div>
                 <div class="mt-3 w-100 d-flex justify-content-center">
-                  <button type="button" class="btn w-50 btn-lg btn-white border-primary text-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Medium';">Sign Up</button>
+                  <button type="button" class="btn w-50 btn-lg btn-white border-primary text-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Medium', sans-serif;">Sign Up</button>
                 </div>
               </div>
             </div>
@@ -447,7 +456,7 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
                   </div>
                 </div>
                 <div class="my-3 w-100 d-flex">
-                  <button type="button" class="btn w-50 btn-lg btn-white border-primary text-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Medium';">Sign Up</button>
+                  <button type="button" class="btn w-50 btn-lg btn-white border-primary text-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Medium', sans-serif;">Sign Up</button>
                 </div>
               </div>
             </div>
@@ -541,14 +550,28 @@ Join Altruistech today and unlock a world of collaboration, convenience, and imp
 <section id="testimonials" class="mt-3">
 
 <div class="container mb-2">
+  <div>
+
+ 
 <p class="text-primary h5">Testimonials </p>
 <h2 style="font-family: 'ClashDisplay-Semibold';">
 See what people are saying about our solution.
 </h2>
 </div>
+
+</div>
 <!-- Carousel wrapper -->
 <div id="carouselMultiItemExample" class="carousel slide mx-4 border-rounded pb-2 carousel-dark text-center" data-bs-ride="carousel">
-
+  <div class="d-flex justify-content-center mb-4">
+    <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon text-primary " aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next border-primary border-rounded position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
+      <span class="carousel-control-next" aria-hidden="true"><i class="bi bi-arrow-right-circle"></i> </span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 <!-- Inner -->
 <div class="carousel-inner py-4">
       <!-- Single item -->
@@ -556,7 +579,7 @@ See what people are saying about our solution.
         <div class="container">
           <div class="row">
             <div class="col-lg-4 d-lg-block mb-3">
-              <div class="testimonial-item bg-light rounded shadow p-3 pb-5" style=" height: 100%;">
+              <div class="testimonial-item bg-light rounded p-3 pb-5" style=" height: 100%;">
                 <div class="d-flex justify-content-start v-10 " >
                     <div class="flex-item">
                         <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-female-soldier-jobs-career-portrait.jpg" alt="avatar" style="width: 75px; height:75px;">
@@ -577,7 +600,7 @@ See what people are saying about our solution.
               </div>
             </div>
               <div class="col-lg-4 d-lg-block mb-3 bg">
-                <div class="testimonial-item bg-gray rounded shadow p-3" style=" height: max-content;">
+                <div class="testimonial-item bg-gray rounded p-3" style=" height: max-content;">
                   <div class="d-flex justify-content-start v-10 bg-gray" >
                       <div class="flex-item">
                           <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/front-view-smiley-man-wearing-lab-coat.jpg" alt="avatar" style="width: 75px; height:75px;">
@@ -597,7 +620,7 @@ See what people are saying about our solution.
                 </div>
               </div>
               <div class="col-lg-4 d-lg-block">
-                <div class="testimonial-item bg-gray rounded shadow p-3" style="height: 100%;">
+                <div class="testimonial-item bg-gray rounded p-3" style="height: 100%;">
                   <div class="d-flex v-10 bg-gray" >
                       <div class="flex-item">
                           <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-teenage-girl-portrait-happy-smiling-face.jpg" alt="avatar" style="width: 100px;">
@@ -626,7 +649,7 @@ See what people are saying about our solution.
             <div class="container">
               <div class="row">
                 <div class="col-lg-4 d-lg-block mb-3">
-                  <div class="testimonial-item bg-light rounded shadow p-3 pb-5" style=" height: 100%;">
+                  <div class="testimonial-item rounded p-3 pb-5" style=" height: 100%;">
                     <div class="d-flex justify-content-start v-10 " >
                         <div class="flex-item">
                             <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-female-soldier-jobs-career-portrait.jpg" alt="avatar" style="width: 75px; height:75px;">
@@ -647,7 +670,7 @@ See what people are saying about our solution.
                   </div>
                 </div>
                   <div class="col-lg-4 d-lg-block mb-3 bg">
-                    <div class="testimonial-item bg-gray rounded shadow p-3" style=" height: max-content;">
+                    <div class="testimonial-item bg-gray rounded p-3" style=" height: max-content;">
                       <div class="d-flex justify-content-start v-10 bg-gray" >
                           <div class="flex-item">
                               <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/front-view-smiley-man-wearing-lab-coat.jpg" alt="avatar" style="width: 75px; height:75px;">
@@ -667,7 +690,7 @@ See what people are saying about our solution.
                     </div>
                   </div>
                   <div class="col-lg-4 d-lg-block">
-                    <div class="testimonial-item bg-gray rounded shadow p-3" style="height: 100%;">
+                    <div class="testimonial-item bg-gray rounded p-3" style="height: 100%;background-color:#F5F8FE;">
                       <div class="d-flex v-10 bg-gray" >
                           <div class="flex-item">
                               <img class="rounded-circle shadow-1-strong mb-4 testimonial-img" src="images/african-teenage-girl-portrait-happy-smiling-face.jpg" alt="avatar" style="width: 100px;">
@@ -694,16 +717,7 @@ See what people are saying about our solution.
     </div>
     <!-- Inner -->
     <!-- Controls -->
-    <div class="d-flex justify-content-center mb-4">
-      <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon text-primary " aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next position-relative" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon primary" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+
   </div>
   <!-- Carousel wrapper -->
 </section>
@@ -877,11 +891,11 @@ Thank you for taking the time to take our survey. We appreciate your feedback.
 <form class="m-3">
   <div class="mb-3">
       <label for="name" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Full Name<span class="required">*</span></label>
-      <input type="text" class="form-control p-2" id="survey-name" aria-describedby="nameHelp">
+      <input type="text" class="form-control p-2" id="survey-name" aria-describedby="nameHelp" required>
     </div>
   <div class="mb-3">
     <label for="surveyEmail" class="form-label" style="font-family: 'ClashDisplay-Semibold';">Email address<span class="required">*</span></label>
-    <input type="email" class="form-control p-2" id="survey-email" aria-describedby="emailHelp">
+    <input type="email" class="form-control p-2" id="survey-email" aria-describedby="emailHelp" required>
   </div>
   <div class="mb-3">
     <label for="survey" class="form-label" style="font-family: 'ClashDisplay-Semibold';">What is your feedback to our solution?<span class="required">*</span></label>
@@ -965,7 +979,7 @@ Fill this form and we will get back to you
           <p>
             Altruistech is a cutting-edge mobile application designed to revolutionize the way health professionals, hospitals, patients, and community health workers connect and collaborate. With our user-friendly platform, we aim to streamline the healthcare industry by providing a seamless and efficient solution for all stakeholders.
           </p>
-          <button type="button" class="btn w-50 btn-lg btn-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Light', sans-serif;">Sign Up</button>
+          <button type="button" class="btn w-50 btn-lg btn-primary py-3" data-bs-toggle="modal" data-bs-target="#waitlist" style="font-family: 'ClashDisplay-Medium', sans-serif;">Sign Up</button>
 
         </div>
         <!-- Grid column -->
