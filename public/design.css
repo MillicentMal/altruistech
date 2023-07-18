@@ -1,0 +1,32 @@
+@import url('clash-display.css');
+
+header {
+  
+}
+
+@media (min-width: 992px) {
+    /* * {
+      background-color: lightgreen;
+    } */
+    .header-div{
+      display: flex;
+      width: 1440px;
+      height: 80px;
+      padding: 24px 100px;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+    .header-logo {
+      display: flex;
+      flex-direction: row;
+      font-size: 25px;
+      font-family: 'ClashDisplay-Semibold', sans-serif;
+    }
+  }
+
+  @media (max-width: 900px) {
+    * {
+      background-color: lightblue;
+    }
+  }

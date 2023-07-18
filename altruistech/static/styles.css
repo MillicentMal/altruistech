@@ -1,5 +1,9 @@
 @import url('clash-display.css');
 
+section {
+    margin-left: 113px;
+    margin-right: 113px;
+}
 
 p, a {
     font-family: 'ClashDisplay-Extralight', sans-serif;
@@ -83,5 +87,92 @@ form {
     .d-none.d-md-block {
       display: none !important;
     }
+    .home-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 325px;
+    }
   }
   
+  .testimonial-item {
+    background-color: #F5F8FE;
+ 
+  }
+
+.sign-up {
+  font-size: 16px;
+  width: 140px;
+}
+  @media (min-width: 776px) {
+    /* * {
+      background-color: lightgreen;
+    } */
+    .navbar {
+      padding: 24px 100px;
+      justify-content: center;
+      align-items: center;
+    }
+.header-text
+{
+  display: flex;
+
+height: 80px;
+padding-top: 24px;
+padding-bottom: 24px;
+justify-content: center;
+align-items: center;
+gap: 24px;
+}
+.col-text {
+  display: flex;
+}
+.home-container {
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+.home-header {
+  font-size: 40px;
+  font-family: 'ClashDisplay-Semibold', sans-serif;
+}
+  }
+
+  .logo {
+    font-size: 28px;
+    font-family: 'ClashDisplay-Semibold', sans-serif;
+  }
+
+@media (max-width: 775px) {
+  .header-text {
+    font-size: 16px;
+    display: flex;
+height: 80px;
+padding: 20px 16px;
+justify-content: flex-start;
+align-items: center;
+gap: 16px;
+
+  }
+
+
+  .logo {
+    padding-left: 0px;
+  }
+  #home {
+    padding: 20px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .home-header {
+    font-size:24px;
+    font-family: 'ClashDisplay-Semibold', sans-serif;
+
+  }
+  .sign-up {
+    font-size: 16px;
+    width: 100%;
+  }
+  .home-container {
+    padding-bottom: 64px;
+  }
+}

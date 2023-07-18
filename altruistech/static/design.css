@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+    * {
+      background-color: lightgreen;
+    }
+  }
+
+  @media (min-width: 476px) {
+    * {
+      background-color: lightblue;
+    }
+  }
