@@ -175,4 +175,7 @@ gap: 16px;
   .home-container {
     padding-bottom: 64px;
   }
+  .feature-sign-up {
+    width: 100%;
+  }
 }
